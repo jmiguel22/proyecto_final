@@ -8,8 +8,10 @@
 
 \documentclass[12pt]{article}
 \usepackage[utf8]{inputenc}
-\usepackage[spanish]{babel}
+\usepackage[spanish,es-tabla]{babel}
 \usepackage{hyperref}
+\usepackage{multirow}
+\usepackage{graphicx}
 \begin{document}
 \maketitle
 
@@ -24,11 +26,41 @@ Enlace al repositorio: \url{https://github.com/jmiguel22/proyecto_final.git}\\\\
 En la era de la informaci\'on en la que vivimos, el uso de las redes sociales se ha convertido en un factor determinante a la hora de fomentar la comunicaci\'on, la participaci\'on y la formaci\'on entre los j\'ovenes. En este sentido, la irrupci\'on de esta nueva forma de obtener, compartir y gestionar la informaci\'on, plantea nuevos escenarios de aprendizaje dentro y fuera de las instituciones educativas. 
 
 \section{Estado del arte}
-Surgen nuevos espacios virtuales que se reservan directamente para el aprendizaje. Sloep y Berlanga \cite{sloep_learning_2011}, presentan el concepto de redes de aprendizaje como \''entornos de aprendizaje en l\'inea que ayudan a los participantes a desarrollar sus competencias colaborando y compartiendo informaci\'on\'' (p.56). As\'i, las redes sociales tambi\'en tienen un componente educativo que ofrece una serie de ventajas como: el aprendizaje colaborativo y cooperativo, la construcci\'on de grupos, y la creaci\'on de conocimiento de forma colectiva \cite{ortega_espacios_2008}. En este sentido, aparecen los MOOC como redes virtuales destinadas a la enseñanza de contenidos, esto es, entornos virtuales de aprendizaje favorecidos por la tecnolog\'ia \cite{bartolome-pina_are_2015}.
+Surgen nuevos espacios virtuales que se reservan directamente para el aprendizaje. Sloep y Berlanga \cite{sloep_learning_2011}, presentan el concepto de redes de aprendizaje como ``entornos de aprendizaje en l\'inea que ayudan a los participantes a desarrollar sus competencias colaborando y compartiendo informaci\'on" (p.56). As\'i, las redes sociales tambi\'en tienen un componente educativo que ofrece una serie de ventajas como: el aprendizaje colaborativo y cooperativo, la construcci\'on de grupos, y la creaci\'on de conocimiento de forma colectiva \cite{ortega_espacios_2008}. En este sentido, aparecen los MOOC como redes virtuales destinadas a la enseñanza de contenidos, esto es, entornos virtuales de aprendizaje favorecidos por la tecnolog\'ia \cite{bartolome-pina_are_2015}.
 
 \section{Im\'agenes y tablas}
+\begin{table}[htb]
+\centering
+\begin{tabular}{|l|l|l|l|}
+\hline
+& \multicolumn{3}{c|}{Variables} \\
+\cline{2-4}
+& Género & Uso & Clase\\
+\hline \hline
+Caso 1 & Hombre & Alto & Media\\ \cline{1-4}
+Caso 2 & Mujer & Bajo & Alta \\ \cline{1-4}
+Caso 3 & Mujer & Medio & Baja\\ \cline{1-4}
+\end{tabular}
+\caption{Características de los casos.}
+\label{tabla:final}
+\end{table}
+
+\includegraphics[scale=0.5]{logo}
 
 \section{F\'ormulas}
+\noindent
+Formula 1:
+\[
+f(x_{1}, x_{2}) = \sum_{x_{1}, x_{2}\in \mathbf{R}} \frac{ax_{1}^2 + bx_{1} + c}{dx_{2}^2 + ex_{2} + f}
+\]
+Formula 2:
+\[P(a|b,c)=P(a,b,c)/P(b,c)\]
+Formula 3:
+\[P(b|a,c)=P(b,a,c)/P(a,c)=P(a,b,c)/P(a,c)\]
+Formula 4:
+\[\log P(y=c) + \sum_{i} \sum_{j} B(F_i = j) \log P(F_i = j|y=c)\]
+Formula 5:
+\[P(Y=c)\prod_{i} P(F_i|Y=c)\]
 
 \bibliographystyle{abbrv}
 \bibliography{biblio}
